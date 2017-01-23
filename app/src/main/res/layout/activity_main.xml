@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="xyz.fatahillah.playwithnumbers.MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fizz Buzz"
+        android:onClick="openFizzBuzz"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find The Number"
+        android:onClick="openFindNumber"
+        android:background="@android:color/holo_green_light"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game of Three"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="openGameOfThree"
+        android:layout_margin="4dp"/>
+
+
+</LinearLayout>
