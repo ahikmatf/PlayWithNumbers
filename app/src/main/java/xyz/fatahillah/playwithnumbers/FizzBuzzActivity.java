@@ -43,23 +43,7 @@ public class FizzBuzzActivity extends AppCompatActivity {
         fizzLabel.setText("");
         buzzLabel.setText("");
 
-        for (int i = start; i <= end; i++) {
 
-            if (((i % 5) == 0) && ((i % 3) == 0)) {             // A multiple of both
-
-                fizzBuzzLabel.setText(fizzBuzzLabel.getText() + ", " + String.valueOf(i));
-
-            } else if ((i % 3) == 0) {                          // else a multiple of 3?
-
-                fizzLabel.setText(fizzLabel.getText() + ", " + String.valueOf(i));
-
-            } else if ((i % 5) == 0) {                          // else a multiple of 5?
-
-                buzzLabel.setText(buzzLabel.getText() + ", " + String.valueOf(i));
-
-            }
-
-        }
 
     }
 

@@ -2,7 +2,6 @@ package xyz.fatahillah.playwithnumbers;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -42,42 +41,7 @@ public class GameOfThreeActivity extends AppCompatActivity {
         progressNumber.setText("");
         currentInteger.setText(String.valueOf(input));
 
-        for (int i = input; i >= 3;) {
-
-            Log.d("current i", "" + i);
-
-            if (i % 3 == 0) {
-
-                i = i / 3;
-                Log.d("prog a i", "" + i);
-
-                progressNumber.setText(progressNumber.getText() + "0, ");
-
-
-            } else if (i % 3 == 1) {
-
-                i = (i - 1) / 3;
-                Log.d("prog b i", "" + i);
-
-                progressNumber.setText(progressNumber.getText() + "-1, ");
-
-
-            } else if (i % 3 == 2) {
-
-                i = (i + 1) / 3;
-                Log.d("prog c i", "" + i);
-
-                progressNumber.setText(progressNumber.getText() + "+1, ");
-
-            }
-
-            if (i >= 3) {
-
-                currentInteger.setText(currentInteger.getText() + ", " + String.valueOf(i));
-
-            }
-
-        }
+        
 
     }
 }

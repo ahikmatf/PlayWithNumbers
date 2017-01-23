@@ -45,23 +45,6 @@ public class FindTheNaturalNumberActivity extends AppCompatActivity {
 
         theNumber.setText("");
 
-        int numberPosition = 0;
 
-        for (int i = 1 ; i < end; i++) {
-            String currentNumber = String.valueOf(i);
-
-            for (int j = 0; j < currentNumber.length(); j++) {
-
-                numberPosition += 1;
-
-                if (numberPosition == target) {
-
-                    theNumber.setText(String.valueOf(currentNumber.charAt(j)));
-                    ofNumber.setText(currentNumber);
-                    break;
-
-                }
-            }
-        }
     }
 }
